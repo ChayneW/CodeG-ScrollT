@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -13,6 +12,14 @@ h1 {
 	text-transform: uppercase;
 	font-family: "Barlow Condensed";
 	font-size: 6rem;
+	font-weight: 900;
+	line-height: 0.85;
+	letter-spacing: -0.02rem;
+}
+
+h2 {
+	font-family: "Barlow Condensed";
+	font-size: 4rem;
 	font-weight: 900;
 	line-height: 0.85;
 	letter-spacing: -0.02rem;
@@ -42,24 +49,6 @@ nav {
 	z-index: 2;	
 }
 
-/*nav {
-	position: fixed;
-	top: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 35%;
-	padding: 1rem 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 0.5rem;
-	z-index: 2;	
-}*/
-
-
 nav img {
 	width: 3rem;
 }
@@ -73,7 +62,7 @@ section {
 	overflow: hidden;
 }
 
-.intro .outro {
+.intro .mid-sect .outro {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -88,6 +77,70 @@ section {
 	width: 50%;
 	z-index: 1;
 }
+
+.mid-sect {
+	background-color: white;
+	justify-self: center;
+	text-align: center;
+	color: black;
+	/*height: 100%;*/
+}
+
+.about {
+	padding: 140px 0;
+	justify-self: center;
+	text-align: center;
+}
+
+.about p {
+
+}
+
+.designs {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-self: center;
+	padding: 0 0 200px;
+}
+
+.design-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.design-img-1 {
+	background-image: url('images/Futuristic-Warrior-Woman.png');
+/*	background-size: cover; 
+  background-position: center;*/ 
+  background-repeat: no-repeat;
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 100%;
+}
+
+.design-img-2 {
+	background-image: url("images/Futuristic-Woman-Space.png");
+	/*background-size: cover; 
+  background-position: center; */
+  background-repeat: no-repeat; 
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 100%;
+}
+
+.design-img-3 {
+	background-image: url("images/Futuristic-Armored-Figure.png");
+	/*background-size: cover; 
+  background-position: center;*/ 
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 100%;
+}
+
 
 .spotlight {
 	background-color:#101010;
@@ -119,24 +172,6 @@ section {
 	aspect-ratio: 5/7;
 	overflow: hidden;
 }
-
-/*.img img {
-	opacity: .5;
-	filter: saturate(100);
-}*/
-
-/*.mask-container {
-	position: absolute;
-	top: 0;
-	left: 100vw;
-	height: 100svh;
-	-webkit-mask: url(images/Vector.svg) center/contain no-repeat;
-	mask: url(images/Vector.svg) center/contain no-repeat;
-	-webkit-mask-size: 0%;
-	mask-size: 0%;
-	overflow: hidden;
-	z-index: 10;
-}*/
 
 .mask-container {
   position: fixed; /* or absolute if inside a pinned section */
@@ -231,6 +266,26 @@ section {
 		width: 200vw;
 		left: -25vw;
 	}
+}
+
+@media (max-width: 767px) {
+	.mid-sect {
+		height: 100%;
+	}
+  .designs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100vh; /* each image takes ~60% of viewport height */
+    gap: 1rem;
+    height: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .design-img {
+    width: 100%;
+    height: 100%; /* now references the 60vh grid row */
+    border: 1px solid black;
+  }
 }
 
 
