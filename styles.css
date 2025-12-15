@@ -335,6 +335,21 @@ section {
   font-size: 1.2rem;
 }
 
+.footer {
+	background-color: white;
+	/*color: black;*/
+}
+
+.closing-header {
+	height: 100%;
+	width: 100%;
+	background-image: url("images/gifs/luffy-charge.gif");
+	background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  align-content: center;
+}
+
 
 
 @media (max-width: 1000px) {
