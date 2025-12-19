@@ -338,7 +338,7 @@ section {
 .footer { 
 	background-color: black;
 	color: white; 
-	height: 100vh; 
+	height: 100%; 
 	width: 100vw; 
 	background-image: url("images/gifs/220069.gif"); 
 	background-size: cover; 
@@ -482,6 +482,10 @@ section {
   	height: 100%;
   	display: grid;
   	flex-direction: none;
+  }
+
+  .footer-inner {
+  	padding-top: 200px;
   }
 
   .footer-label {
