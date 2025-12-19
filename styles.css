@@ -402,7 +402,7 @@ section {
 
 
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
 	h1 {
 		font-size: 4rem;
 	}
@@ -415,7 +415,7 @@ section {
 		width: 200vw;
 		left: -25vw;
 	}
-}
+}*/
 
 @media (min-width: 1200px) and (max-width: 1400px) {
 	.design-img {
@@ -426,6 +426,21 @@ section {
 
 @media (max-width: 1000px) {
 	/*767px*/
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	nav, .header {
+		width: calc(100% - 4rem);
+	}
+
+	.spotlight-images {
+		width: 200vw;
+		left: -25vw;
+	}
+
+	
 
 	.intro {
 		background-image: url('images/ilya-kuvshinov-lyd.jpg');
@@ -477,6 +492,10 @@ section {
 
   .design-img {
     min-height: 100svh;
+  }
+
+  .footer {
+  	height: 100%;
   }
 
   .footer-label {
