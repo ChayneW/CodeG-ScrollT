@@ -225,6 +225,30 @@ section {
 	align-items: center;
 }
 
+.skills-service-details h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    transform 0.45s ease,
+    opacity 0.3s ease;
+}
+
+.design-img:hover .skills-service-details h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skills-service-details h3:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.skills-service-details h3:nth-child(2) {
+  transition-delay: 0.12s;
+}
+.skills-service-details h3:nth-child(3) {
+  transition-delay: 0.18s;
+}
+
+
 
 .spotlight {
 	background-color:#101010;
@@ -361,7 +385,7 @@ section {
 	display: flex; 
 	width: 100%; 
 	height: 100%; 
-	padding: 200px 0; 
+	padding: 300px 0 100px; 
 	justify-content: space-around; 
 	/*align-items: center;*/
 } 
@@ -431,7 +455,7 @@ section {
 	}
 
 	nav, .header {
-		width: calc(100% - 4rem);
+		width: calc(100% - 10rem);
 	}
 
 	.spotlight-images {
@@ -496,6 +520,7 @@ section {
   	width: 100%;
   	height:100%;
   	display: grid;
+  	padding: 200px 0 100px; 
   	/*justify-content: center;*/
   }
 
