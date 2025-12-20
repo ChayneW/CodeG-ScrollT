@@ -54,12 +54,18 @@ nav img {
 }
 
 section {
+	/*height: 100svh;*/
+
+	height: 100vh;
+	min-height: 100vh;
+
 	position: relative;
 	width: 100vw;
-	height: 100svh;
 	background-color: #161616;
 	color: #fff;
 	overflow: hidden;
+
+
 }
 
 .intro .mid-sect .outro {
@@ -91,7 +97,7 @@ section {
 }
 
 .mid-sect {
-	/*background-color: white;*/
+	background-color: #161616;;
 	color: white;
 	justify-self: center;
 	text-align: center;
@@ -138,10 +144,8 @@ section {
 
 
 .design-img {
-  /*width: 100%;
-  height: 800px;
-  background-size: cover;
-  background-position: center;*/
+  position: relative;
+  overflow: hidden;
 
   width: 100%;
  	min-height: 100vh;
@@ -205,16 +209,15 @@ section {
 /**/
 
 .skills-details {
-	/*margin: 0 auto;*/
 	display: grid;
 	color: white;
 	width: 100%;
 	text-align: center;
-	/*height: 100vh;*/
-	/*justify-content: center;*/
-	/*align-items: center;*/
 	padding: 30% 10px;
 	gap: 10px;
+
+	position: relative;
+  z-index: 2;
 }
 
 .skills-service-title {
@@ -253,6 +256,62 @@ section {
 .skills-service-details h3:nth-child(3) {
   transition-delay: 0.18s;
 }
+
+
+/*card flip*/
+
+.design-img-1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/future-2.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  z-index: 1;
+}
+
+.design-img-1:hover::after {
+  opacity: 1;
+}
+
+
+.design-img-2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/red-woman-sword.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  z-index: 1;
+}
+
+.design-img-2:hover::after {
+  opacity: 1;
+}
+
+
+.design-img-3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/spear-warrior.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  z-index: 1;
+}
+
+.design-img-3:hover::after {
+  opacity: 1;
+}
+
+
+/**/
 
 
 
@@ -485,7 +544,7 @@ section {
   }
 
   .about {
-    padding: 100px 5rem; 
+    padding: 50px 5rem; 
   }
 
   .skills-details {
