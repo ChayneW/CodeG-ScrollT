@@ -4,6 +4,8 @@ import { SplitText } from "gsap/SplitText";
 import Lenis from "lenis";
 import { inject } from '@vercel/analytics';
 
+// Initialize Vercel Web Analytics
+// This sends page view data to Vercel's analytics dashboard
 inject();
 
 document.addEventListener("DOMContentLoaded", () => {
