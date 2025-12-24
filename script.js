@@ -4,7 +4,9 @@ import { SplitText } from "gsap/SplitText";
 import Lenis from "lenis";
 import { inject } from '@vercel/analytics';
 
-inject();
+if (import.meta.env.PROD) {
+  inject();
+};
 
 document.addEventListener("DOMContentLoaded", () => {
 
